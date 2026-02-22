@@ -1,0 +1,7 @@
+{
+  "name": "RockLanka Tours - Quiet Luxury Redefined",
+  "description": "A high-end, immersive travel platform for luxury experiences in Sri Lanka, featuring cinematic visuals, a Bento-grid activities explorer, and an AI-powered custom journey builder.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
