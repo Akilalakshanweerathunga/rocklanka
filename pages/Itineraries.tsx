@@ -6,6 +6,8 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import ItineraryModal from '../components/ItineraryModal';
 import { ITINERARIES } from '../assets/images';
 
+import ItinerariesSEO from '../components/SEO/ItinerariesSEO';
+
 interface Itinerary {
   id: string;
   title: string;
@@ -161,6 +163,7 @@ const Itineraries: React.FC = () => {
 
   return (
     <div className="min-h-screen font-sans selection:bg-burnt selection:text-white overflow-x-hidden">
+      <ItinerariesSEO />
       <Navbar isScrolled={true} />
       
       {/* Hero Section */}
@@ -257,3 +260,4 @@ const Itineraries: React.FC = () => {
 };
 
 export default Itineraries;
+export { itineraries };

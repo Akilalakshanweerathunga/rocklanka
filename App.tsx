@@ -19,6 +19,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import ImageUpload from './pages/ImageUpload';
 
+import SEO from './components/SEO/SEO';
+
 // Scroll to top component
 const ScrollToTop: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { pathname } = useLocation();
@@ -47,7 +49,13 @@ const Home: React.FC = () => {
       <Navbar isScrolled={isScrolled} />
       <main>
         <HeroSlider />
-        
+        <SEO
+          title="RockLanka Tours | Curated Journeys"
+          description="Discover the best-kept secrets of Sri Lanka with RockLanka. Private luxury tours, wildlife safaris, cultural experiences, and eco-friendly adventures."
+          url="https://rocklankatours.com/"
+          image="https://rocklankatours.com/assets/images/logo/logo.png"
+          keywords="luxury Sri Lanka tours, private Sri Lanka tours, sustainable travel Sri Lanka"
+        />
         <section id="legacy" className="py-24 px-6 md:px-12 bg-forest">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">

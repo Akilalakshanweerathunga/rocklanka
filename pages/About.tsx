@@ -4,9 +4,19 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 
+import SEO from '../components/SEO/SEO';
+
 const About: React.FC = () => {
   return (
     <div className="min-h-screen font-sans selection:bg-burnt selection:text-white overflow-x-hidden">
+      <SEO
+        title="About Us | RockLanka Tours"
+        description="Discover the story behind RockLanka Tours — pioneers of quiet luxury travel in Sri Lanka, crafting unforgettable experiences since 2010."
+        url="https://rocklankatours.com/about"
+        image="https://rocklankatours.com/assets/images/logo/logo.png"
+        keywords="RockLanka, Sri Lanka travel, luxury tours, about us, quiet luxury"
+      />
+
       <Navbar isScrolled={true} />
       
       {/* Hero Section */}

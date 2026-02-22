@@ -6,6 +6,8 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import ActivityModal from '../components/ActivityModal';
 import { ACTIVITIES_PAGE, PAGE_HERO } from '../assets/images';
 
+import ActivitiesSEO from '../components/SEO/ActivitiesSEO';
+
 interface Activity {
   id: string;
   title: string;
@@ -178,7 +180,6 @@ const activities: Activity[] = [
     whatToBring: ['Change of clothes', 'Waterproof camera', 'Secure footwear', 'Towel']
   }
 ];
-
 const categories = ['All', 'Wildlife & Safari', 'History & Adventure', 'Culture & Coastal', 'Culinary & Highlands', 'Wellness & Spa', 'Adventure & Thrill'];
 
 const Activities: React.FC = () => {
@@ -202,6 +203,7 @@ const Activities: React.FC = () => {
 
   return (
     <div className="min-h-screen font-sans selection:bg-burnt selection:text-white overflow-x-hidden">
+      <ActivitiesSEO />
       <Navbar isScrolled={true} />
       
       {/* Hero Section */}
@@ -323,3 +325,4 @@ const Activities: React.FC = () => {
 };
 
 export default Activities;
+export { activities };

@@ -6,6 +6,8 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import DestinationModal from '../components/DestinationModal';
 import { DESTINATIONS, PAGE_HERO } from '../assets/images';
 
+import DestinationsSEO from '../components/SEO/DestinationsSEO';
+
 interface Destination {
   id: string;
   name: string;
@@ -125,6 +127,7 @@ const Destinations: React.FC = () => {
 
   return (
     <div className="min-h-screen font-sans selection:bg-burnt selection:text-white overflow-x-hidden">
+      <DestinationsSEO />
       <Navbar isScrolled={true} />
       
       {/* Hero Section */}
@@ -258,3 +261,4 @@ const Destinations: React.FC = () => {
 };
 
 export default Destinations;
+export { destinations };

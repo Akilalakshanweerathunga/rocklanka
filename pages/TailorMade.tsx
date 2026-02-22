@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 
+import SEO from '../components/SEO/SEO'; 
+
 // FormSubmit.co endpoint - sends form submissions to email
 const FORMSUBMIT_URL = 'https://formsubmit.co/rocklankatours@gmail.com';
 
@@ -177,6 +179,13 @@ const TailorMade: React.FC = () => {
 
   return (
     <div className="min-h-screen font-sans selection:bg-burnt selection:text-white overflow-x-hidden">
+      <SEO
+        title="Tailor-Made Trips | RockLanka Tours"
+        description="Design your dream Sri Lankan adventure with RockLanka Tours. Share your preferences and our experts will craft a personalized itinerary for you."
+        url="https://rocklankatours.com/tailor-made"
+        image="https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=2070&auto=format&fit=crop"
+        keywords="Tailor-made trips, custom itinerary, Sri Lanka travel, bespoke travel, personalized tour, RockLanka Tours"
+      />
       <Navbar isScrolled={true} />
       
       {/* Hero Section */}
