@@ -31,11 +31,11 @@ export function generateSitemap(dynamicPages: string[] = []) {
     .join('')}
 </urlset>`;
 
-  const folder = resolve('./dist'); 
+  const folder = resolve('./public'); 
   mkdirSync(folder, { recursive: true });
 
   writeFileSync(resolve(folder, 'sitemap.xml'), sitemap);
-  console.log('Sitemap generated at dist/sitemap.xml');
+  console.log('Sitemap generated at public/sitemap.xml');
 }
 
 generateSitemap();
