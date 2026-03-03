@@ -33,6 +33,8 @@ const SEO: React.FC<SEOProps> = ({
 
       <link rel="icon" href="/logo.png" type="image/png" />
 
+      <meta name="robots" content="index, follow" />
+      
       <meta property="og:type" content="website" />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
